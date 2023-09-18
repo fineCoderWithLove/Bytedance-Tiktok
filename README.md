@@ -39,6 +39,57 @@
 ![image](https://github.com/fineCoderWithLove/douyin-base/assets/122780660/02ada50b-2958-43d3-8c03-15e6e0b05a65)
 
 ### 2.3代码目录介绍
+```
+├─base-service # 基础服务
+│  ├─cmd # 启动类  
+│  ├─global # 定义全局信息
+│  │  └─constant # 定义全局常量
+│  ├─handler # 业务处理
+│  ├─model # 定义常用结构体
+│  │  └─video
+│  ├─proto # proto文件
+│  │  └─favorite
+│  ├─test # 测试类
+│  ├─util # 封装工具类
+│  └─videoproto # 视频的proto文件
+├─douyin-api # 外部网关
+│  ├─api # grpc服务调用
+│  ├─cmd # 启动类
+│  ├─global # 定义全局变量
+│  ├─globalinit # 定义全局日志信息
+│  │  └─constant
+│  ├─proto # proto文件
+│  ├─redis # 封装redis工具类
+│  ├─router # 加载路由信息
+│  └─util # 封装工具类
+├─interaction-service # 互动模块
+│  ├─dao # gen代码生成器
+│  │  └─gen
+│  ├─global # 定义全局信息
+│  ├─handler # 处理业务信息
+│  ├─model # 定义常用结构体
+│  ├─proto # proto文件
+│  │  ├─comment
+│  │  ├─favorite
+│  │  ├─user
+│  │  └─video
+│  └─server # grpc启动类
+│      ├─comment
+│      └─favorite
+├─log # 输入的日志信息
+│  ├─error
+│  └─info
+└─social-service # 社交模块
+    ├─cmd # 启动类
+    ├─global # 定义全局变量
+    ├─handler # 处理业务
+    ├─proto   # proto文件
+    │  ├─favorite
+    │  ├─message
+    │  ├─relation
+    │  └─user
+    └─util # 封装的工具类
+```
 
   ![image](https://github.com/fineCoderWithLove/douyin-base/assets/122780660/98c481dd-b922-4c96-bf62-926947ce3282)
 
